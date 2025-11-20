@@ -5,10 +5,10 @@ public class Triangleshi {
     
     int i, j, num;
 
-    System.out.print("Last numbers nigga: ");
+    System.out.print("Enter a number here: ");
     num = sc.nextInt();
     
-    // uhh pataas part
+    // pataas part
     for (i = 1; i <= num; i++) {
        for (j = 1; j <= i; j++) {
          System.out.print("*");
