@@ -1,10 +1,38 @@
+// LAB ACTIVITY 2 
+// November 28, 2025
+// Programmed by: Kiel San Miguel
+
 import java.util.Scanner;
-public class averagebruh {
+public class LabAct2 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
     // Variable Naming
-    int i, j, size1, size2;
+    int i, j, size1, size2, attempts;
+    String Username = "KIEL";
+    String Password = "SANMIGUEL";
+
+    // 3 attempts loop for wrong inputs (capitalize user input always)
+    do {
+      System.out.println("\n---Enter Login Credentials---\n");
+      System.out.print("Enter your Username: ");
+      String UserInput = sc.nextLine.toUpperCase();
+
+      System.out.print("Enter your Password: ");
+      String PassInput = sc.nextLine.toUpperCase();
+
+      if (UserInput.equals(Username) || UserPass.equals(PassInput)) {
+        // If correct
+        System.out.println("\nCredentials entered are correct!\n");
+      } else { // If wrong
+        attempts++
+      }
+
+    }  while (attempts < 4) 
+
+     if (attempts == 4) {
+       System.out.println("Too much failed attempts");        
+     }
 
     // Loop for however many inputs of array 1 the user wants
     System.out.print("\nEnter the size of Array 1: ");
@@ -64,3 +92,4 @@ public class averagebruh {
     sc.close();
   }
 }
+
